@@ -84,6 +84,8 @@ class GameContainer {
       autoDensity: true,
     })
 
+    window.__PIXI_APP__ = this.app;
+
     this.app.ticker.add(this.onTick.bind(this))
     this.app.ticker.maxFPS = 0
 
